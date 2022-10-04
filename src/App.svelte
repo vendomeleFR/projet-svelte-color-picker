@@ -3,7 +3,7 @@
 </script>
 
 <main>
-	<h1>Color Picker</h1>
+	<h1>Svelte - Color Picker</h1>
 	<ColorPicker />
 </main>
 

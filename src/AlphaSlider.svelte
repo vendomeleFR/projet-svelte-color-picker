@@ -11,7 +11,7 @@
     let position = 100;
 
     $: update(position);
-    $: alphaBg = `linear-gradient(to right, rgba(${color.r}, ${color.g}, ${color.b}, 0), rgb(${color.r}, ${color.g}, ${color.b})), url('/assets/img/alpha.png')`;
+    $: alphaBg = `linear-gradient(to right, rgba(${color.r}, ${color.g}, ${color.b}, 0), rgb(${color.r}, ${color.g}, ${color.b})), url('../assets/img/alpha.png')`;
 
     function update() {
         dispatch('change' , {

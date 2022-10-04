@@ -39,14 +39,15 @@
         updateInfo();
     }
 
-    function onAlphaChange(alpha) {
+    function onAlphaChange(value) {
+        alpha = value;
         preview.a = alpha;
 
         updateInfo();
     }
 
     function updateInfo() {
-        previewBg = `linear-gradient(rgba(${preview.r}, ${preview.g}, ${preview.b}, ${preview.a}), rgba(${preview.r}, ${preview.g}, ${preview.b}, ${preview.a})), url('/assets/img/alpha.png')`;
+        previewBg = `linear-gradient(rgba(${preview.r}, ${preview.g}, ${preview.b}, ${preview.a}), rgba(${preview.r}, ${preview.g}, ${preview.b}, ${preview.a})), url('../assets/img/alpha.png')`;
 
         let r = preview.r.toString(16);
         let g = preview.g.toString(16);

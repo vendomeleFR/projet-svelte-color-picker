@@ -2,3 +2,5 @@
 /public/build/
 
 .DS_Store
+public/assets/img/card.png
+public/assets/img/favicon.png

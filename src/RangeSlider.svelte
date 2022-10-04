@@ -31,8 +31,9 @@
         background: var(--bg);
     }
 
-    .selector {
+    .selector-wrapper {
         position: absolute;
+        padding: 4px;
         top: 50%;
         left: var(--left);
         transform: translate(-50%, -50%);
@@ -41,6 +42,8 @@
 
 <div {styleContainer}>
     <div bind:this={track} class="track" {styleTrack} class:track-bg={background != 'none'} style="--bg: {background}">
-        <div class="selector" style="--left: {position}%;" on:mousemove={(e) => onSelectorMouseMove(e.buttons, e.movementX)} {styleSelector} />
+        <div class="selector-wrapper" style="--left: {position}%;" on:mousemove={(e) => onSelectorMouseMove(e.buttons, e.movementX)}>
+            <div class="selector" {styleSelector} />
+        </div>
     </div>
 </div>
